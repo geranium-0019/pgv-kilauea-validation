@@ -1,0 +1,36 @@
+{
+  "source": {
+    "lon": -155.27468612518877,
+    "lat": 19.409611688078158
+  },
+  "station": {
+    "lat": 19.411965975199998,
+    "lon": -155.26005153895,
+    "ellipsoid_height_m": 1098.43598,
+    "daily_2025_records": 354,
+    "use": "Daily data used only to fix station coordinates; pair displacements remain the existing five-minute estimates."
+  },
+  "horizontal_distance_m": 1559.021206327847,
+  "outward_east_north": [
+    0.9859361586233654,
+    0.16712238365641527
+  ],
+  "outward_azimuth_deg": 80.37944969508902,
+  "unit_model_vectors": {
+    "1500": [
+      0.7104810618006308,
+      0.12043101122962342,
+      0.6933347188457093
+    ]
+  },
+  "formula": "d_ENU = A*g + residual; g = (delta_E_source_to_station, delta_N_source_to_station, depth)/R; Ahat=(g.T C^-1 d)/(g.T C^-1 g). A units mm at BYRL, not reservoir volume/pressure.",
+  "covariance": "C=diag(SE_E_master^2+SE_E_slave^2, SE_N_master^2+SE_N_slave^2, SE_U_master^2+SE_U_slave^2). Component and temporal covariances unavailable in the five-minute archive and not modeled.",
+  "physical_assumptions": "Single isotropic Mogi point source, homogeneous elastic half-space, flat surface at the station reference level; depth relative to that plane; positive A is expansion conditional on this model.",
+  "independent_labels": "Source center fixed from existing HRMM polygon; depth midpoint fixed before calculation; no PGV peaks, eruption timing or agreement scores used to fit source geometry.",
+  "sources": [
+    "https://geodesy.unr.edu/NGLStationPages/stations/BYRL.sta",
+    "https://gscommunitycodes.usf.edu/geoscicommunitycodes/public/geophysics/Deformation/mogi.php",
+    "https://pubs.usgs.gov/publication/pp1867G"
+  ],
+  "depth_m": 1500
+}

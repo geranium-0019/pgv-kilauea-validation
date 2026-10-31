@@ -1,0 +1,10 @@
+{
+  "input_pairs": 164,
+  "eligible_pairs": 127,
+  "frequency_pre": 14,
+  "frequency_co": 23,
+  "gnss_pairs": 120,
+  "gnss_30min_agreement": 103,
+  "gnss_15min_agreement": 102,
+  "absolute_tolerance": 1e-10
+}

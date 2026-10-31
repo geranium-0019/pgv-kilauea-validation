@@ -1,0 +1,24 @@
+{
+  "_pgv_core.py": {
+    "source_file": "scripts/vendor/capella/02_gradient_voting/core.py",
+    "source_sha256": "97da0da8cc8171e2504affd9b499307b17fab2bdf5558f737c9b51f33c4e4676",
+    "objects": [
+      "deg2m",
+      "pixel_to_lonlat",
+      "build_caldera_mask",
+      "compute_wrapped_gradient",
+      "do_vote_directional"
+    ]
+  },
+  "_gnss_fit.py": {
+    "source_file": "scripts/vendor/gnss/03_validation_kilauea/gnss_5min.py",
+    "source_sha256": "0c7558068f33d0389f93650ed26effa3e86ae1720272358288c94dd5b59c83be",
+    "objects": [
+      "Settings",
+      "_solve",
+      "robust_line",
+      "step_diagnostic",
+      "estimate_position"
+    ]
+  }
+}

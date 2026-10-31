@@ -1,0 +1,54 @@
+# All paths are relative to base_dir, which is relative to this YAML file.
+base_dir: ..
+data_dir: data
+output_dir: output
+pairs_csv: examples/kilauea/pairs.csv
+acquisitions_csv: examples/kilauea/acquisitions.csv
+eruptions_csv: examples/kilauea/eruption_episodes.csv
+endpoint_estimates_csv: examples/kilauea/image_estimates.csv
+source_model_json: examples/kilauea/source_model.json
+roi_files:
+  ASC: examples/kilauea/ASC_roi.npz
+  DESC: examples/kilauea/DESC_roi.npz
+hmmr_geojson: examples/kilauea/hmmr.geojson
+reference_dir: reference
+dem: data/dem.tif
+gnss_directory: data/gnss
+reference: {lat: 19.409, lon: -155.281}
+pgv:
+  radius_m: 3000.0
+  coherence_threshold: 0.25
+  gradient_step_px: 3
+  vote_spacing_m: 20.0
+  extent_m: 3500.0
+  ray_min_m: 50.0
+  ray_max_m: 2500.0
+  ray_steps: 50
+  smooth_sigma_m: 100.0
+  target_vote_points: 100000
+  weight: coherence_squared
+  occurrence_k_sigma: 2.0
+quality:
+  minimum_valid_fraction: 0.03
+  # Retain the independently audited paper cohort; do not select by PGV/GNSS outcome.
+gnss:
+  windows_minutes: [15, 30]
+  primary_window_minutes: 30
+  require_complete_30min_windows: true
+  gps_minus_utc_seconds: 18
+  gps_calendar_year: 2025
+  estimator:
+    window_minutes: 30
+    sensitivity_windows_minutes: [15, 30]
+    min_points: 6
+    min_points_each_side: 2
+    min_span_fraction: 0.7
+    max_gap_seconds: 600
+    max_nearest_seconds: 150
+    huber_k: 1.345
+    sigma_multiplier: 1.0
+    step_bic_gain: 10
+figures:
+  font: DejaVu Sans
+  dpi: 300
+  method_pair: hawaii_20250421_20250424_v3d

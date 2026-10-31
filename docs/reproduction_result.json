@@ -1,0 +1,33 @@
+{
+  "state": "verified",
+  "input_pairs": 164,
+  "eligible_pairs": 127,
+  "frequency_counts_exact": true,
+  "gnss": [
+    {
+      "window_minutes": 15,
+      "n": 120,
+      "agree": 102,
+      "max_absolute_error": 0.0
+    },
+    {
+      "window_minutes": 30,
+      "n": 120,
+      "agree": 103,
+      "max_absolute_error": 0.0
+    }
+  ],
+  "pgv_maps_compared": 127,
+  "max_map_absolute_error": 0.0,
+  "raw_gnss_endpoint_max_error": 0.0,
+  "validation_date": "2026-10-31",
+  "unit_tests_passed": 18,
+  "figure_font": "Aptos",
+  "dependency_versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "rasterio": "1.4.4",
+    "matplotlib": "3.10.8",
+    "PyYAML": "6.0.3"
+  }
+}

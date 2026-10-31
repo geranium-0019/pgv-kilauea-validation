@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the associated PGV publication and the version of this software used."
+title: "PGV Kilauea Validation"
+version: 0.1.0
+date-released: 2026-10-31
+type: software
+authors:
+  - family-names: Nagase
+    given-names: Yasuhito
+license: MIT
